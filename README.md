@@ -36,11 +36,11 @@ docker run --name container_name --network="host" -d -p host_port:container_port
 ```
 
 ### Remove untagged (None) or unused images
-### Remove all unused images (including "none" tagged)
+##### Remove all unused images (including "none" tagged)
 ```bash
 docker images -f "dangling=true" -q | xargs -r docker rmi -f
 ```
-### Remove only "none" tagged images
+##### Remove only "none" tagged images
 ```bash
 docker images -a | grep none | awk '{ print $3; }' | xargs docker rmi
 ```
