@@ -87,10 +87,12 @@ rm -rf __docker_compose_logs__ && mkdir __docker_compose_logs__ && nohup docker 
 ### Down Docker Compose
 ```bash
 docker compose down
+```
 
 ### Clean Docker cache
 ```bash
 docker builder prune -a --filter until=24h
+```
 
 
 # ---------------------------Linux commands
