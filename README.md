@@ -9,22 +9,26 @@ docker images
 
 
 
-### List running containers
+## List running containers
+
 ```bash
 docker ps
 ```
 
-### List all containers (running + stopped)
+## List all containers (running + stopped)
+
 ```bash
 docker ps -a
 ```
 
-### Build image
+## Build image
+
 ```bash
 docker build -t image_name .
 ```
 
-### Build container (remove -d if not want to run container in detach mode)
+## Build container (remove -d if not want to run container in detach mode)
+
 ```bash
 docker run --name container_name -d -p host_port:container_port image_name
 ```
